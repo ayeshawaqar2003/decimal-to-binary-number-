@@ -1,0 +1,15 @@
+
+// Initialize myNumber variable to an integer of your choosing
+let myNumber = 2; // You can select any integer here
+
+// Initialize an empty string for binary
+let binary = '';
+
+// Loop while myNumber is greater than 0
+while (myNumber > 0) {
+    // If myNumber is divisible by 2, add '0' to binary. Otherwise, add '1'
+    binary = (myNumber % 2) + binary; // myNumber%2 will be 0 if myNumber is divisible by 2, otherwise it will be 1
+    myNumber = Math.floor(myNumber / 2);
+}
+
+console.log(binary); // will output the binary equivalent of initially selected number
